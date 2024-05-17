@@ -1,0 +1,567 @@
+{
+	"info": {
+		"_postman_id": "ebc87ce7-ef26-4a35-8088-4c938991ca82",
+		"name": "Fake iTunes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllCustomers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllCustomers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Feb 2021 12:58:02 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"customerId\": 1,\n        \"firstName\": \"Luís\",\n        \"lastName\": \"Gonçalves\",\n        \"country\": \"Brazil\",\n        \"postalCode\": \"12227-000\",\n        \"phone\": \"+55 (12) 3923-5555\",\n        \"email\": \"luisg@embraer.com.br\"\n    },\n    {\n        \"customerId\": 2,\n        \"firstName\": \"Leonie\",\n        \"lastName\": \"Köhler\",\n        \"country\": \"Germany\",\n        \"postalCode\": \"70174\",\n        \"phone\": \"+49 0711 2842222\",\n        \"email\": \"leonekohler@surfeu.de\"\n    },\n    {\n        \"customerId\": 3,\n        \"firstName\": \"François\",\n        \"lastName\": \"Tremblay\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"H2G 1A7\",\n        \"phone\": \"+1 (514) 721-4711\",\n        \"email\": \"ftremblay@gmail.com\"\n    },\n    {\n        \"customerId\": 4,\n        \"firstName\": \"Bjørn\",\n        \"lastName\": \"Hansen\",\n        \"country\": \"Norway\",\n        \"postalCode\": \"0171\",\n        \"phone\": \"+47 22 44 22 22\",\n        \"email\": \"bjorn.hansen@yahoo.no\"\n    },\n    {\n        \"customerId\": 5,\n        \"firstName\": \"František\",\n        \"lastName\": \"Wichterlová\",\n        \"country\": \"Czech Republic\",\n        \"postalCode\": \"14700\",\n        \"phone\": \"+420 2 4172 5555\",\n        \"email\": \"frantisekw@jetbrains.com\"\n    },\n    {\n        \"customerId\": 6,\n        \"firstName\": \"Helena\",\n        \"lastName\": \"Holý\",\n        \"country\": \"Czech Republic\",\n        \"postalCode\": \"14300\",\n        \"phone\": \"+420 2 4177 0449\",\n        \"email\": \"hholy@gmail.com\"\n    },\n    {\n        \"customerId\": 7,\n        \"firstName\": \"Astrid\",\n        \"lastName\": \"Gruber\",\n        \"country\": \"Austria\",\n        \"postalCode\": \"1010\",\n        \"phone\": \"+43 01 5134505\",\n        \"email\": \"astrid.gruber@apple.at\"\n    },\n    {\n        \"customerId\": 8,\n        \"firstName\": \"Daan\",\n        \"lastName\": \"Peeters\",\n        \"country\": \"Belgium\",\n        \"postalCode\": \"1000\",\n        \"phone\": \"+32 02 219 03 03\",\n        \"email\": \"daan_peeters@apple.be\"\n    },\n    {\n        \"customerId\": 9,\n        \"firstName\": \"Kara\",\n        \"lastName\": \"Nielsen\",\n        \"country\": \"Denmark\",\n        \"postalCode\": \"1720\",\n        \"phone\": \"+453 3331 9991\",\n        \"email\": \"kara.nielsen@jubii.dk\"\n    },\n    {\n        \"customerId\": 10,\n        \"firstName\": \"Eduardo\",\n        \"lastName\": \"Martins\",\n        \"country\": \"Brazil\",\n        \"postalCode\": \"01007-010\",\n        \"phone\": \"+55 (11) 3033-5446\",\n        \"email\": \"eduardo@woodstock.com.br\"\n    },\n    {\n        \"customerId\": 11,\n        \"firstName\": \"Alexandre\",\n        \"lastName\": \"Rocha\",\n        \"country\": \"Brazil\",\n        \"postalCode\": \"01310-200\",\n        \"phone\": \"+55 (11) 3055-3278\",\n        \"email\": \"alero@uol.com.br\"\n    },\n    {\n        \"customerId\": 12,\n        \"firstName\": \"Roberto\",\n        \"lastName\": \"Almeida\",\n        \"country\": \"Brazil\",\n        \"postalCode\": \"20040-020\",\n        \"phone\": \"+55 (21) 2271-7000\",\n        \"email\": \"roberto.almeida@riotur.gov.br\"\n    },\n    {\n        \"customerId\": 13,\n        \"firstName\": \"Fernanda\",\n        \"lastName\": \"Ramos\",\n        \"country\": \"Brazil\",\n        \"postalCode\": \"71020-677\",\n        \"phone\": \"+55 (61) 3363-5547\",\n        \"email\": \"fernadaramos4@uol.com.br\"\n    },\n    {\n        \"customerId\": 14,\n        \"firstName\": \"Mark\",\n        \"lastName\": \"Philips\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"T6G 2C7\",\n        \"phone\": \"+1 (780) 434-4554\",\n        \"email\": \"mphilips12@shaw.ca\"\n    },\n    {\n        \"customerId\": 15,\n        \"firstName\": \"Jennifer\",\n        \"lastName\": \"Peterson\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"V6C 1G8\",\n        \"phone\": \"+1 (604) 688-2255\",\n        \"email\": \"jenniferp@rogers.ca\"\n    },\n    {\n        \"customerId\": 16,\n        \"firstName\": \"Frank\",\n        \"lastName\": \"Harris\",\n        \"country\": \"USA\",\n        \"postalCode\": \"94043-1351\",\n        \"phone\": \"+1 (650) 253-0000\",\n        \"email\": \"fharris@google.com\"\n    },\n    {\n        \"customerId\": 17,\n        \"firstName\": \"Jack\",\n        \"lastName\": \"Smith\",\n        \"country\": \"USA\",\n        \"postalCode\": \"98052-8300\",\n        \"phone\": \"+1 (425) 882-8080\",\n        \"email\": \"jacksmith@microsoft.com\"\n    },\n    {\n        \"customerId\": 18,\n        \"firstName\": \"Michelle\",\n        \"lastName\": \"Brooks\",\n        \"country\": \"USA\",\n        \"postalCode\": \"10012-2612\",\n        \"phone\": \"+1 (212) 221-3546\",\n        \"email\": \"michelleb@aol.com\"\n    },\n    {\n        \"customerId\": 19,\n        \"firstName\": \"Tim\",\n        \"lastName\": \"Goyer\",\n        \"country\": \"USA\",\n        \"postalCode\": \"95014\",\n        \"phone\": \"+1 (408) 996-1010\",\n        \"email\": \"tgoyer@apple.com\"\n    },\n    {\n        \"customerId\": 20,\n        \"firstName\": \"Dan\",\n        \"lastName\": \"Miller\",\n        \"country\": \"USA\",\n        \"postalCode\": \"94040-111\",\n        \"phone\": \"+1 (650) 644-3358\",\n        \"email\": \"dmiller@comcast.com\"\n    },\n    {\n        \"customerId\": 21,\n        \"firstName\": \"Kathy\",\n        \"lastName\": \"Chase\",\n        \"country\": \"USA\",\n        \"postalCode\": \"89503\",\n        \"phone\": \"+1 (775) 223-7665\",\n        \"email\": \"kachase@hotmail.com\"\n    },\n    {\n        \"customerId\": 22,\n        \"firstName\": \"Heather\",\n        \"lastName\": \"Leacock\",\n        \"country\": \"USA\",\n        \"postalCode\": \"32801\",\n        \"phone\": \"+1 (407) 999-7788\",\n        \"email\": \"hleacock@gmail.com\"\n    },\n    {\n        \"customerId\": 23,\n        \"firstName\": \"John\",\n        \"lastName\": \"Gordon\",\n        \"country\": \"USA\",\n        \"postalCode\": \"2113\",\n        \"phone\": \"+1 (617) 522-1333\",\n        \"email\": \"johngordon22@yahoo.com\"\n    },\n    {\n        \"customerId\": 24,\n        \"firstName\": \"Frank\",\n        \"lastName\": \"Ralston\",\n        \"country\": \"USA\",\n        \"postalCode\": \"60611\",\n        \"phone\": \"+1 (312) 332-3232\",\n        \"email\": \"fralston@gmail.com\"\n    },\n    {\n        \"customerId\": 25,\n        \"firstName\": \"Victor\",\n        \"lastName\": \"Stevens\",\n        \"country\": \"USA\",\n        \"postalCode\": \"53703\",\n        \"phone\": \"+1 (608) 257-0597\",\n        \"email\": \"vstevens@yahoo.com\"\n    },\n    {\n        \"customerId\": 26,\n        \"firstName\": \"Richard\",\n        \"lastName\": \"Cunningham\",\n        \"country\": \"USA\",\n        \"postalCode\": \"76110\",\n        \"phone\": \"+1 (817) 924-7272\",\n        \"email\": \"ricunningham@hotmail.com\"\n    },\n    {\n        \"customerId\": 27,\n        \"firstName\": \"Patrick\",\n        \"lastName\": \"Gray\",\n        \"country\": \"USA\",\n        \"postalCode\": \"85719\",\n        \"phone\": \"+1 (520) 622-4200\",\n        \"email\": \"patrick.gray@aol.com\"\n    },\n    {\n        \"customerId\": 28,\n        \"firstName\": \"Julia\",\n        \"lastName\": \"Barnett\",\n        \"country\": \"USA\",\n        \"postalCode\": \"84102\",\n        \"phone\": \"+1 (801) 531-7272\",\n        \"email\": \"jubarnett@gmail.com\"\n    },\n    {\n        \"customerId\": 29,\n        \"firstName\": \"Robert\",\n        \"lastName\": \"Brown\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"M6J 1V1\",\n        \"phone\": \"+1 (416) 363-8888\",\n        \"email\": \"robbrown@shaw.ca\"\n    },\n    {\n        \"customerId\": 30,\n        \"firstName\": \"Edward\",\n        \"lastName\": \"Francis\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"K2P 1L7\",\n        \"phone\": \"+1 (613) 234-3322\",\n        \"email\": \"edfrancis@yachoo.ca\"\n    },\n    {\n        \"customerId\": 31,\n        \"firstName\": \"Martha\",\n        \"lastName\": \"Silk\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"B3S 1C5\",\n        \"phone\": \"+1 (902) 450-0450\",\n        \"email\": \"marthasilk@gmail.com\"\n    },\n    {\n        \"customerId\": 32,\n        \"firstName\": \"Aaron\",\n        \"lastName\": \"Mitchell\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"R3L 2B9\",\n        \"phone\": \"+1 (204) 452-6452\",\n        \"email\": \"aaronmitchell@yahoo.ca\"\n    },\n    {\n        \"customerId\": 33,\n        \"firstName\": \"Ellie\",\n        \"lastName\": \"Sullivan\",\n        \"country\": \"Canada\",\n        \"postalCode\": \"X1A 1N6\",\n        \"phone\": \"+1 (867) 920-2233\",\n        \"email\": \"ellie.sullivan@shaw.ca\"\n    },\n    {\n        \"customerId\": 34,\n        \"firstName\": \"João\",\n        \"lastName\": \"Fernandes\",\n        \"country\": \"Portugal\",\n        \"postalCode\": null,\n        \"phone\": \"+351 (213) 466-111\",\n        \"email\": \"jfernandes@yahoo.pt\"\n    },\n    {\n        \"customerId\": 35,\n        \"firstName\": \"Madalena\",\n        \"lastName\": \"Sampaio\",\n        \"country\": \"Portugal\",\n        \"postalCode\": null,\n        \"phone\": \"+351 (225) 022-448\",\n        \"email\": \"masampaio@sapo.pt\"\n    },\n    {\n        \"customerId\": 36,\n        \"firstName\": \"Hannah\",\n        \"lastName\": \"Schneider\",\n        \"country\": \"Germany\",\n        \"postalCode\": \"10789\",\n        \"phone\": \"+49 030 26550280\",\n        \"email\": \"hannah.schneider@yahoo.de\"\n    },\n    {\n        \"customerId\": 37,\n        \"firstName\": \"Fynn\",\n        \"lastName\": \"Zimmermann\",\n        \"country\": \"Germany\",\n        \"postalCode\": \"60316\",\n        \"phone\": \"+49 069 40598889\",\n        \"email\": \"fzimmermann@yahoo.de\"\n    },\n    {\n        \"customerId\": 38,\n        \"firstName\": \"Niklas\",\n        \"lastName\": \"Schröder\",\n        \"country\": \"Germany\",\n        \"postalCode\": \"10779\",\n        \"phone\": \"+49 030 2141444\",\n        \"email\": \"nschroder@surfeu.de\"\n    },\n    {\n        \"customerId\": 39,\n        \"firstName\": \"Camille\",\n        \"lastName\": \"Bernard\",\n        \"country\": \"France\",\n        \"postalCode\": \"75009\",\n        \"phone\": \"+33 01 49 70 65 65\",\n        \"email\": \"camille.bernard@yahoo.fr\"\n    },\n    {\n        \"customerId\": 40,\n        \"firstName\": \"Dominique\",\n        \"lastName\": \"Lefebvre\",\n        \"country\": \"France\",\n        \"postalCode\": \"75002\",\n        \"phone\": \"+33 01 47 42 71 71\",\n        \"email\": \"dominiquelefebvre@gmail.com\"\n    },\n    {\n        \"customerId\": 41,\n        \"firstName\": \"Marc\",\n        \"lastName\": \"Dubois\",\n        \"country\": \"France\",\n        \"postalCode\": \"69002\",\n        \"phone\": \"+33 04 78 30 30 30\",\n        \"email\": \"marc.dubois@hotmail.com\"\n    },\n    {\n        \"customerId\": 42,\n        \"firstName\": \"Wyatt\",\n        \"lastName\": \"Girard\",\n        \"country\": \"France\",\n        \"postalCode\": \"33000\",\n        \"phone\": \"+33 05 56 96 96 96\",\n        \"email\": \"wyatt.girard@yahoo.fr\"\n    },\n    {\n        \"customerId\": 43,\n        \"firstName\": \"Isabelle\",\n        \"lastName\": \"Mercier\",\n        \"country\": \"France\",\n        \"postalCode\": \"21000\",\n        \"phone\": \"+33 03 80 73 66 99\",\n        \"email\": \"isabelle_mercier@apple.fr\"\n    },\n    {\n        \"customerId\": 44,\n        \"firstName\": \"Terhi\",\n        \"lastName\": \"Hämäläinen\",\n        \"country\": \"Finland\",\n        \"postalCode\": \"00530\",\n        \"phone\": \"+358 09 870 2000\",\n        \"email\": \"terhi.hamalainen@apple.fi\"\n    },\n    {\n        \"customerId\": 45,\n        \"firstName\": \"Ladislav\",\n        \"lastName\": \"Kovács\",\n        \"country\": \"Hungary\",\n        \"postalCode\": \"H-1073\",\n        \"phone\": null,\n        \"email\": \"ladislav_kovacs@apple.hu\"\n    },\n    {\n        \"customerId\": 46,\n        \"firstName\": \"Hugh\",\n        \"lastName\": \"O'Reilly\",\n        \"country\": \"Ireland\",\n        \"postalCode\": null,\n        \"phone\": \"+353 01 6792424\",\n        \"email\": \"hughoreilly@apple.ie\"\n    },\n    {\n        \"customerId\": 47,\n        \"firstName\": \"Lucas\",\n        \"lastName\": \"Mancini\",\n        \"country\": \"Italy\",\n        \"postalCode\": \"00192\",\n        \"phone\": \"+39 06 39733434\",\n        \"email\": \"lucas.mancini@yahoo.it\"\n    },\n    {\n        \"customerId\": 48,\n        \"firstName\": \"Johannes\",\n        \"lastName\": \"Van der Berg\",\n        \"country\": \"Netherlands\",\n        \"postalCode\": \"1016\",\n        \"phone\": \"+31 020 6223130\",\n        \"email\": \"johavanderberg@yahoo.nl\"\n    },\n    {\n        \"customerId\": 49,\n        \"firstName\": \"Stanisław\",\n        \"lastName\": \"Wójcik\",\n        \"country\": \"Poland\",\n        \"postalCode\": \"00-358\",\n        \"phone\": \"+48 22 828 37 39\",\n        \"email\": \"stanisław.wójcik@wp.pl\"\n    },\n    {\n        \"customerId\": 50,\n        \"firstName\": \"Enrique\",\n        \"lastName\": \"Muñoz\",\n        \"country\": \"Spain\",\n        \"postalCode\": \"28015\",\n        \"phone\": \"+34 914 454 454\",\n        \"email\": \"enrique_munoz@yahoo.es\"\n    },\n    {\n        \"customerId\": 51,\n        \"firstName\": \"Joakim\",\n        \"lastName\": \"Johansson\",\n        \"country\": \"Sweden\",\n        \"postalCode\": \"11230\",\n        \"phone\": \"+46 08-651 52 52\",\n        \"email\": \"joakim.johansson@yahoo.se\"\n    },\n    {\n        \"customerId\": 52,\n        \"firstName\": \"Emma\",\n        \"lastName\": \"Jones\",\n        \"country\": \"United Kingdom\",\n        \"postalCode\": \"N1 5LH\",\n        \"phone\": \"+44 020 7707 0707\",\n        \"email\": \"emma_jones@hotmail.com\"\n    },\n    {\n        \"customerId\": 53,\n        \"firstName\": \"Phil\",\n        \"lastName\": \"Hughes\",\n        \"country\": \"United Kingdom\",\n        \"postalCode\": \"SW1V 3EN\",\n        \"phone\": \"+44 020 7976 5722\",\n        \"email\": \"phil.hughes@gmail.com\"\n    },\n    {\n        \"customerId\": 54,\n        \"firstName\": \"Steve\",\n        \"lastName\": \"Murray\",\n        \"country\": \"United Kingdom\",\n        \"postalCode\": \"EH4 1HH\",\n        \"phone\": \"+44 0131 315 3300\",\n        \"email\": \"steve.murray@yahoo.uk\"\n    },\n    {\n        \"customerId\": 55,\n        \"firstName\": \"Mark\",\n        \"lastName\": \"Taylor\",\n        \"country\": \"Australia\",\n        \"postalCode\": \"2010\",\n        \"phone\": \"+61 (02) 9332 3633\",\n        \"email\": \"mark.taylor@yahoo.au\"\n    },\n    {\n        \"customerId\": 56,\n        \"firstName\": \"Diego\",\n        \"lastName\": \"Gutiérrez\",\n        \"country\": \"Argentina\",\n        \"postalCode\": \"1106\",\n        \"phone\": \"+54 (0)11 4311 4333\",\n        \"email\": \"diego.gutierrez@yahoo.ar\"\n    },\n    {\n        \"customerId\": 57,\n        \"firstName\": \"Luis\",\n        \"lastName\": \"Rojas\",\n        \"country\": \"Chile\",\n        \"postalCode\": null,\n        \"phone\": \"+56 (0)2 635 4444\",\n        \"email\": \"luisrojas@yahoo.cl\"\n    },\n    {\n        \"customerId\": 58,\n        \"firstName\": \"Manoj\",\n        \"lastName\": \"Pareek\",\n        \"country\": \"India\",\n        \"postalCode\": \"110017\",\n        \"phone\": \"+91 0124 39883988\",\n        \"email\": \"manoj.pareek@rediff.com\"\n    },\n    {\n        \"customerId\": 59,\n        \"firstName\": \"Puja\",\n        \"lastName\": \"Srivastava\",\n        \"country\": \"India\",\n        \"postalCode\": \"560001\",\n        \"phone\": \"+91 080 22289999\",\n        \"email\": \"puja_srivastava@yahoo.in\"\n    },\n    {\n        \"customerId\": 65,\n        \"firstName\": \"Piggy P\",\n        \"lastName\": \"The Brave\",\n        \"country\": \"Land of Joy\",\n        \"postalCode\": \"14573-111\",\n        \"phone\": \"+45 1234-5678\",\n        \"email\": \"piggythebrave@gmail.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addNewCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 63,\r\n    \"firstName\": \"Piggy\",\r\n    \"lastName\": \"The Brave\",\r\n    \"country\": \"Land of Joy\",\r\n    \"postalCode\": \"14573-111\",\r\n    \"phone\": \"+45 1234-5678\",\r\n    \"email\": \"piggythebrave@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addNewCustomer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerId\": 63,\r\n    \"firstName\": \"Piggy\",\r\n    \"lastName\": \"The Brave\",\r\n    \"country\": \"Land of Joy\",\r\n    \"postalCode\": \"14573-111\",\r\n    \"phone\": \"+45 1234-5678\",\r\n    \"email\": \"piggythebrave@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 07 Feb 2021 17:22:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "updateExistingCustomer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 65,\r\n    \"firstName\": \"Piggy P\",\r\n    \"lastName\": \"The Brave\",\r\n    \"country\": \"Land of Joy\",\r\n    \"postalCode\": \"14573-111\",\r\n    \"phone\": \"+45 1234-5678\",\r\n    \"email\": \"piggythebrave@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/customers/63",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"customers",
+						"63"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateExistingCustomer",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customerId\": 65,\r\n    \"firstName\": \"Piggy P\",\r\n    \"lastName\": \"The Brave\",\r\n    \"country\": \"Land of Joy\",\r\n    \"postalCode\": \"14573-111\",\r\n    \"phone\": \"+45 1234-5678\",\r\n    \"email\": \"piggythebrave@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/api/customers/63",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"customers",
+								"63"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 07 Feb 2021 17:21:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "true"
+				}
+			]
+		},
+		{
+			"name": "getAllCustomersCollated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/api/customers/collated",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"customers",
+						"collated"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllCustomersSortedByCountryDescending",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/api/customers/collated",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"customers",
+								"collated"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Feb 2021 14:24:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"USA\",\n        \"nrOfCustomers\": 13\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Canada\",\n        \"nrOfCustomers\": 8\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Brazil\",\n        \"nrOfCustomers\": 5\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"France\",\n        \"nrOfCustomers\": 5\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Germany\",\n        \"nrOfCustomers\": 4\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"United Kingdom\",\n        \"nrOfCustomers\": 3\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Czech Republic\",\n        \"nrOfCustomers\": 2\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"India\",\n        \"nrOfCustomers\": 2\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Portugal\",\n        \"nrOfCustomers\": 2\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Argentina\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Australia\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Austria\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Belgium\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Chile\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Denmark\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Finland\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Hungary\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Ireland\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Italy\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Land of Joy\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Netherlands\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Norway\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Poland\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Spain\",\n        \"nrOfCustomers\": 1\n    },\n    {\n        \"criterion\": \"COUNTRY\",\n        \"criterionValue\": \"Sweden\",\n        \"nrOfCustomers\": 1\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getHighestSpenders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/api/customers/highest-spenders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"customers",
+						"highest-spenders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getHighestSpenders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/api/customers/highest-spenders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"customers",
+								"highest-spenders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Feb 2021 15:21:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"customerId\": 6,\n        \"firstName\": \"Helena\",\n        \"lastName\": \"Holý\",\n        \"totalSpending\": 49.62\n    },\n    {\n        \"customerId\": 26,\n        \"firstName\": \"Richard\",\n        \"lastName\": \"Cunningham\",\n        \"totalSpending\": 47.62\n    },\n    {\n        \"customerId\": 57,\n        \"firstName\": \"Luis\",\n        \"lastName\": \"Rojas\",\n        \"totalSpending\": 46.62\n    },\n    {\n        \"customerId\": 46,\n        \"firstName\": \"Hugh\",\n        \"lastName\": \"O'Reilly\",\n        \"totalSpending\": 45.62\n    },\n    {\n        \"customerId\": 45,\n        \"firstName\": \"Ladislav\",\n        \"lastName\": \"Kovács\",\n        \"totalSpending\": 45.62\n    },\n    {\n        \"customerId\": 24,\n        \"firstName\": \"Frank\",\n        \"lastName\": \"Ralston\",\n        \"totalSpending\": 43.62\n    },\n    {\n        \"customerId\": 37,\n        \"firstName\": \"Fynn\",\n        \"lastName\": \"Zimmermann\",\n        \"totalSpending\": 43.62\n    },\n    {\n        \"customerId\": 28,\n        \"firstName\": \"Julia\",\n        \"lastName\": \"Barnett\",\n        \"totalSpending\": 43.62\n    },\n    {\n        \"customerId\": 7,\n        \"firstName\": \"Astrid\",\n        \"lastName\": \"Gruber\",\n        \"totalSpending\": 42.62\n    },\n    {\n        \"customerId\": 25,\n        \"firstName\": \"Victor\",\n        \"lastName\": \"Stevens\",\n        \"totalSpending\": 42.62\n    },\n    {\n        \"customerId\": 44,\n        \"firstName\": \"Terhi\",\n        \"lastName\": \"Hämäläinen\",\n        \"totalSpending\": 41.62\n    },\n    {\n        \"customerId\": 5,\n        \"firstName\": \"František\",\n        \"lastName\": \"Wichterlová\",\n        \"totalSpending\": 40.62\n    },\n    {\n        \"customerId\": 43,\n        \"firstName\": \"Isabelle\",\n        \"lastName\": \"Mercier\",\n        \"totalSpending\": 40.62\n    },\n    {\n        \"customerId\": 48,\n        \"firstName\": \"Johannes\",\n        \"lastName\": \"Van der Berg\",\n        \"totalSpending\": 40.62\n    },\n    {\n        \"customerId\": 4,\n        \"firstName\": \"Bjørn\",\n        \"lastName\": \"Hansen\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 20,\n        \"firstName\": \"Dan\",\n        \"lastName\": \"Miller\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 3,\n        \"firstName\": \"François\",\n        \"lastName\": \"Tremblay\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 22,\n        \"firstName\": \"Heather\",\n        \"lastName\": \"Leacock\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 17,\n        \"firstName\": \"Jack\",\n        \"lastName\": \"Smith\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 34,\n        \"firstName\": \"João\",\n        \"lastName\": \"Fernandes\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 1,\n        \"firstName\": \"Luís\",\n        \"lastName\": \"Gonçalves\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 42,\n        \"firstName\": \"Wyatt\",\n        \"lastName\": \"Girard\",\n        \"totalSpending\": 39.62\n    },\n    {\n        \"customerId\": 39,\n        \"firstName\": \"Camille\",\n        \"lastName\": \"Bernard\",\n        \"totalSpending\": 38.62\n    },\n    {\n        \"customerId\": 40,\n        \"firstName\": \"Dominique\",\n        \"lastName\": \"Lefebvre\",\n        \"totalSpending\": 38.62\n    },\n    {\n        \"customerId\": 15,\n        \"firstName\": \"Jennifer\",\n        \"lastName\": \"Peterson\",\n        \"totalSpending\": 38.62\n    },\n    {\n        \"customerId\": 51,\n        \"firstName\": \"Joakim\",\n        \"lastName\": \"Johansson\",\n        \"totalSpending\": 38.62\n    },\n    {\n        \"customerId\": 58,\n        \"firstName\": \"Manoj\",\n        \"lastName\": \"Pareek\",\n        \"totalSpending\": 38.62\n    },\n    {\n        \"customerId\": 19,\n        \"firstName\": \"Tim\",\n        \"lastName\": \"Goyer\",\n        \"totalSpending\": 38.62\n    },\n    {\n        \"customerId\": 32,\n        \"firstName\": \"Aaron\",\n        \"lastName\": \"Mitchell\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 11,\n        \"firstName\": \"Alexandre\",\n        \"lastName\": \"Rocha\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 8,\n        \"firstName\": \"Daan\",\n        \"lastName\": \"Peeters\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 56,\n        \"firstName\": \"Diego\",\n        \"lastName\": \"Gutiérrez\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 10,\n        \"firstName\": \"Eduardo\",\n        \"lastName\": \"Martins\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 30,\n        \"firstName\": \"Edward\",\n        \"lastName\": \"Francis\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 33,\n        \"firstName\": \"Ellie\",\n        \"lastName\": \"Sullivan\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 52,\n        \"firstName\": \"Emma\",\n        \"lastName\": \"Jones\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 50,\n        \"firstName\": \"Enrique\",\n        \"lastName\": \"Muñoz\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 13,\n        \"firstName\": \"Fernanda\",\n        \"lastName\": \"Ramos\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 16,\n        \"firstName\": \"Frank\",\n        \"lastName\": \"Harris\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 36,\n        \"firstName\": \"Hannah\",\n        \"lastName\": \"Schneider\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 23,\n        \"firstName\": \"John\",\n        \"lastName\": \"Gordon\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 9,\n        \"firstName\": \"Kara\",\n        \"lastName\": \"Nielsen\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 21,\n        \"firstName\": \"Kathy\",\n        \"lastName\": \"Chase\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 2,\n        \"firstName\": \"Leonie\",\n        \"lastName\": \"Köhler\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 47,\n        \"firstName\": \"Lucas\",\n        \"lastName\": \"Mancini\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 35,\n        \"firstName\": \"Madalena\",\n        \"lastName\": \"Sampaio\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 41,\n        \"firstName\": \"Marc\",\n        \"lastName\": \"Dubois\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 14,\n        \"firstName\": \"Mark\",\n        \"lastName\": \"Philips\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 55,\n        \"firstName\": \"Mark\",\n        \"lastName\": \"Taylor\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 31,\n        \"firstName\": \"Martha\",\n        \"lastName\": \"Silk\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 18,\n        \"firstName\": \"Michelle\",\n        \"lastName\": \"Brooks\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 38,\n        \"firstName\": \"Niklas\",\n        \"lastName\": \"Schröder\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 27,\n        \"firstName\": \"Patrick\",\n        \"lastName\": \"Gray\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 53,\n        \"firstName\": \"Phil\",\n        \"lastName\": \"Hughes\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 29,\n        \"firstName\": \"Robert\",\n        \"lastName\": \"Brown\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 12,\n        \"firstName\": \"Roberto\",\n        \"lastName\": \"Almeida\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 49,\n        \"firstName\": \"Stanisław\",\n        \"lastName\": \"Wójcik\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 54,\n        \"firstName\": \"Steve\",\n        \"lastName\": \"Murray\",\n        \"totalSpending\": 37.62\n    },\n    {\n        \"customerId\": 59,\n        \"firstName\": \"Puja\",\n        \"lastName\": \"Srivastava\",\n        \"totalSpending\": 36.64\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getMostPopularGenre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/api/customers/12/most-popular/genre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"customers",
+						"12",
+						"most-popular",
+						"genre"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getMostPopularGenre",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/api/customers/12/most-popular/genre",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"api",
+								"customers",
+								"12",
+								"most-popular",
+								"genre"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Feb 2021 18:06:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"customerId\": 12,\n    \"firstName\": \"Roberto\",\n    \"lastName\": \"Almeida\",\n    \"mostPopularGenre\": {\n        \"Rock\": 16,\n        \"Latin\": 16\n    }\n}"
+				}
+			]
+		}
+	]
+}
